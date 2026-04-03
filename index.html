@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewpoint" content="width=device-wdith, initial-scale=1.0"/>
+  <title>Tashamii Parker - Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display&family=JetBrains+Mono&display=swap" rel="stylesheet"/>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- Mobile Menu Button -->
+<button id="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+<!-- Sidebar -->
+<aside id="sidebar">
+  <div class="sidebar-header">
+    <a href="#home">
+      <div class="logo-avatar">TP</div>
+      <div class="logo-text">
+        <div class="logo-name">Tashamii Parker</div>
+        <div class="logo-title">CS Student</div>
+      </div>
+    </a>
+  </div>
+
+  <nav id="sidebar-nav">
+    <a href="#home" class="active"><span class="nav-icon">◈</span> Home</a>
+    <a href="#about"><span class="nav-icon">◇</span> About</a>
+    <a href="#projects"><span class="nav-iocn">⬡</span> Projects</a>
+    <a href="#skills"><span class="nav-icon">◐</span> Skills</a>
+    <a href="#contact"><span class="nav-icon">✉</span> Contact</a>
+  </nav>
+
+  <div class="sidebar-footer">
+    <div class="sidebar-social">
+      <a href="mailto:tigger.parker.tp@gmail.com">✉</a>
+      <a href="https://github.com/Tashamii" target="_blank">⌘</a>
+      <a href="https://linkedin.com/in/tashamii-parker-194b062b6" target="_blank">in</a>
+    </div>
+  </div>
+</aside>
+
+<!-- Main Content -->
+<main id="main">
+
+<!-- Home -->
+<section id="home">
+  <h1 class="hero-greeting">
+    Hey there,
+    <span>I'm Tashamii Parker.</span>
+  </h1>
+
+  <p class="hero-bio">
+    Driven and detail-oriented Computer Science junior with hands-on experience in programming, 
+    data structures, and object-oriented design. Passionate about building efficient, 
+    interactive applications and solving real-world problems through code.
+  </p>
+
+  <!-- Resume Button -->
+  <div class="her-buttons">
+    <a href="assets/Tashamii.Parker CV 2026" target="_blank" class="btn-secondary">
+      📄 View Resume
+    </a>
+
+    <a href="assets/Tashamii.Parker CV 2026" download class="btn-primary">
+      ⬇ Download Resume
+    </a>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-item">
+      <div class="conact-icon">✉</div>
+      <div class="contact-info">
+        <span class="contact-label">Email</span>
+        <a href="mailto:tigger.parker.tp@gmail.com" class="contact-value">
+          tigger.parker.tp@gmail.com
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div class="contact-icon">⌘</div>
+      <div class="contact-info">
+        <span class="contact-label">Github</span>
+        <a href="https://github.com/Tashamii" target="_blank" class="contact-value">
+          github.com/Tashamii
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div class="contact-icon">in</div>
+      <div class="contact-info">
+        <span class="contact-label">LinkedIn</span>
+        <a href="https://linkedin.com/in/tashamii-parker-194b062b6" target="_blank" class="contact-value">
+          tashamii-parker
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+  <section id="about">
+    <div class="section-header">
+      <div class="section-label">About</div>
+      <h2>About Mek</h2>
+    </div>
+
+    <p>
+      I am a Computer Science student with a strong foundation in programming, data structures, and object-oriented design. 
+      I enjoy building interactive applications that combine logic, creativity, and user-focused functionality. Through 
+      projects like a Dungeons & Dragons-style battle system and a virtual pet simulator, I’ve gained hands-on experience 
+      applying core programming concepts to real-world scenarios. These experiences have strengthened my problem-solving skills 
+      and deepened my understanding of software development. I am constantly looking to improve my technical abilities, learn 
+      new technologies, and take on challenges that push me to grow as a developer. Whether working independently or collaborating 
+      with others, I bring adaptability, initiative, and a strong commitment to producing high-quality work.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="section-header">
+      <div class="section-label">Projects</div>
+      <h2>My Work</h2>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <h3>Dungeons & Dragons Battle Game</h3>
+        <p>
+          A turn-based fantasy battle game built in C++ using object-oriented programming,
+          featuring multiple charcter classes and dice-based combat mechanics.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Virtual Pet Simulator</h3>
+        <p>
+          A Tamagotchi-style simulator built in C++ using inheritace, dynamtic memory,
+          and inheritance user commands to manage pet behavior and status.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="section-header">
+      <div class="section-label">Skills</div>
+      <h2>Technical Skills</h2>
+    </div>
+    
+    <p>
+      C++, Java, Python, CSS, C#, SQL, Typescript, & Javascript
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="section-header">
+      <div class="section-label">Conact</div>
+      <h2>Get In Touch</h2>
+    </div>
+
+    <p>
+      If you'd like to connect, collaborate, pr learn more about my work, feel free to reach out.
+    </p>
+
+    <a href="mailto:tigger.parker.tp@gmail.com" class="btn-primary">
+      Send Email
+    </a>
+  </section>
+
+</main>
+
+<!-- JS -->
+<script src="script.js"></script>
+  
+</body>
+</html>
