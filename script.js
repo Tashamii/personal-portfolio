@@ -14,18 +14,11 @@ var navLinks = document.querySelectorAll('#sidebar-nav a');
 
 function onScroll() {
   var current = '';
-
   sections.forEach(function(sec) {
-    if (window.scrollY >= sec.offsetTop - 120) {
-      current = sec.id;
-    }
+    if (window.scrollY >= sec.offsetTop - 120) current = sec.id;
   });
-
   navLinks.forEach(function(link) {
-    link.classList.toggle(
-      'active',
-      link.getAttribute('href') === '#' + current
-    );
+    link.classList.toggle('active', link.getAttribute('href') === '#' + current);
   });
 }
 
