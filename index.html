@@ -1,191 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewpoint" content="width=device-wdith, initial-scale=1.0"/>
-  <title>Tashamii Parker - Portfolio</title>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display&family=JetBrains+Mono&display=swap" rel="stylesheet"/>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tashamii Parker - Portfolio</title>
+<link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+<link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap)" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-<!-- Mobile Menu Button -->
 <button id="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
 
-<!-- Sidebar -->
 <aside id="sidebar">
   <div class="sidebar-header">
     <a href="#home">
-      <div class="logo-avatar">TP</div>
+      <div class="logo-avatar">
+	<img src="assets/headshot.jpg" alt="Tashamii Parker">
+      </div>
       <div class="logo-text">
         <div class="logo-name">Tashamii Parker</div>
         <div class="logo-title">CS Student</div>
       </div>
     </a>
   </div>
-
   <nav id="sidebar-nav">
     <a href="#home" class="active"><span class="nav-icon">◈</span> Home</a>
     <a href="#about"><span class="nav-icon">◇</span> About</a>
-    <a href="#projects"><span class="nav-iocn">⬡</span> Projects</a>
+    <a href="#education"><span class="nav-icon">◆</span> Education</a>
+    <a href="#experience"><span class="nav-icon">▹</span> Experience</a>
+    <a href="#projects"><span class="nav-icon">⬡</span> Projects</a>
+    <a href="#art"><span class="nav-icon">✦</span> Creative</a>
+    <a href="#volunteering"><span class="nav-icon">♡</span> Volunteering</a>
     <a href="#skills"><span class="nav-icon">◐</span> Skills</a>
     <a href="#contact"><span class="nav-icon">✉</span> Contact</a>
   </nav>
-
   <div class="sidebar-footer">
     <div class="sidebar-social">
-      <a href="mailto:tigger.parker.tp@gmail.com">✉</a>
-      <a href="https://github.com/Tashamii" target="_blank">⌘</a>
-      <a href="https://linkedin.com/in/tashamii-parker-194b062b6" target="_blank">in</a>
+      <a href="mailto:tigger.parker.tp@gmail.com" title="Email">✉</a>
+      <a href="https://github.com/Tashamii" target="_blank" title="GitHub">⌘</a>
+      <a href="https://linkedin.com/in/tashamii-parker-194b062b6" target="_blank" title="LinkedIn">in</a>
     </div>
   </div>
 </aside>
 
-<!-- Main Content -->
 <main id="main">
 
-<!-- Home -->
-<section id="home">
-  <h1 class="hero-greeting">
-    Hey there,
-    <span>I'm Tashamii Parker.</span>
-  </h1>
-
-  <p class="hero-bio">
-    Driven and detail-oriented Computer Science junior with hands-on experience in programming, 
-    data structures, and object-oriented design. Passionate about building efficient, 
-    interactive applications and solving real-world problems through code.
-  </p>
-
-  <!-- Resume Button -->
-  <div class="her-buttons">
-    <a href="assets/Tashamii.Parker CV 2026" target="_blank" class="btn-secondary">
-      📄 View Resume
-    </a>
-
-    <a href="assets/Tashamii.Parker CV 2026" download class="btn-primary">
-      ⬇ Download Resume
-    </a>
-  </div>
-
-  <div class="contact-grid">
-    <div class="contact-item">
-      <div class="conact-icon">✉</div>
-      <div class="contact-info">
-        <span class="contact-label">Email</span>
-        <a href="mailto:tigger.parker.tp@gmail.com" class="contact-value">
-          tigger.parker.tp@gmail.com
-        </a>
+  <section id="home">
+    <div class="hero-container">
+    <img src="assets/headshot.jpg" alt="Tashamii Parker" class="hero-image">
+    <div class="hero-text">
+      <h1 class="hero-greeting">
+        Hey there,
+        <span class="hero-name">I'm Tashamii Parker.</span>
+      </h1>
+      <p class="hero-bio">
+        Driven and detail-oriented junior with growing experience in programming, data structures, and 
+        software design. Passionate about developing innovative solutions to real-world problems through 
+        code. Known for strong leadership, adaptability, and collaboration across multidisciplinary teams.
+      </p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="contact-icon">✉</div>
+        <div class="contact-info">
+          <span class="contact-label">Email</span>
+          <a href="mailto:tigger.parker.tp@gmail.com" class="contact-value">tigger.parker.tp@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">⌘</div>
+        <div class="contact-info">
+          <span class="contact-label">GitHub</span>
+          <a href="https://github.com/Tashamii" target="_blank" class="contact-value">github.com/Tashamii</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">in</div>
+        <div class="contact-info">
+          <span class="contact-label">LinkedIn</span>
+          <a href="https://linkedin.com/in/tashamii-parker-194b062b6" target="_blank" class="contact-value">tashamii-parker</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">↓</div>
+        <div class="contact-info">
+          <span class="contact-label">Resume</span>
+          <a href="https://docs.google.com/document/d/1_Py-dm-sveexCIWsfpqaev4UzNgBUk3oIRQK3VAuA4o/edit?usp=sharing" target="_blank" class="contact-value">View PDF</a>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div class="contact-item">
-      <div class="contact-icon">⌘</div>
-      <div class="contact-info">
-        <span class="contact-label">Github</span>
-        <a href="https://github.com/Tashamii" target="_blank" class="contact-value">
-          github.com/Tashamii
-        </a>
-      </div>
-    </div>
-
-    <div class="contact-item">
-      <div class="contact-icon">in</div>
-      <div class="contact-info">
-        <span class="contact-label">LinkedIn</span>
-        <a href="https://linkedin.com/in/tashamii-parker-194b062b6" target="_blank" class="contact-value">
-          tashamii-parker
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- About -->
   <section id="about">
     <div class="section-header">
-      <div class="section-label">About</div>
-      <h2>About Mek</h2>
+      <p class="section-label">01 — About</p>
+      <h2>A little about me</h2>
     </div>
-
-    <p>
-      I am a Computer Science student with a strong foundation in programming, data structures, and object-oriented design. 
-      I enjoy building interactive applications that combine logic, creativity, and user-focused functionality. Through 
-      projects like a Dungeons & Dragons-style battle system and a virtual pet simulator, I’ve gained hands-on experience 
-      applying core programming concepts to real-world scenarios. These experiences have strengthened my problem-solving skills 
-      and deepened my understanding of software development. I am constantly looking to improve my technical abilities, learn 
-      new technologies, and take on challenges that push me to grow as a developer. Whether working independently or collaborating 
-      with others, I bring adaptability, initiative, and a strong commitment to producing high-quality work.
-    </p>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+	  I am a Computer Science student at <strong>Tuskegee University</strong>, with a strong 
+	  foundation in programming, data structures, and object-oriented design. I enjoy building 
+	  interactive applications that combine logic, creativity, and user-focused functionality. 
+	  Through projects like a Dungeons & Dragons-style battle system and a virtual pet simulator, 
+	  I’ve gained hands-on experience applying core programming concepts to real-world scenarios.
+	  These experiences have strengthened my problem-solving skills and deepened my understanding 
+	  of software development.
+        </p>
+        <p> 
+	  I am constantly looking to improve my technical abilities, learn new technologies, and take 
+	  on challenges that push me to grow as a developer. Whether working independently or collaborating 
+	  with others, I bring adaptability, initiative, and a strong commitment to producing high-quality 
+          work. When I'm not coding, you'll find me listening to music, watching anime with friends, 
+	  or diving deep into research. I believe the best solutions come from curiosity and collaboration.
+        </p>
+      </div>
+      <div class="about-highlights">
+        <div class="highlight-card">
+          <div class="highlight-value">3.8</div>
+          <div class="highlight-label">GPA</div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-value">2027</div>
+          <div class="highlight-label">Graduation</div>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-value">★</div>
+          <div class="highlight-label">Presidential Scholar</div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Projects -->
+  <section id="education">
+    <div class="section-header">
+      <p class="section-label">02 — Education</p>
+      <h2>Where I've learned</h2>
+    </div>
+    <div class="edu-layout">
+      <div class="edu-courses">
+        <h4>Coursework</h4>
+        <ul>
+          <li>Data Structures & Algorithms</li>
+          <li>Operating Systems</li>
+          <li>Computer Networks</li>
+          <li>Machine Learning</li>
+          <li>Databases</li>
+          <li>Software Engineering</li>
+        </ul>
+      </div>
+      <div class="edu-items">
+        <div class="edu-card">
+          <h3>Bachelor of Science in Computer Science</h3>
+          <div class="edu-school">Tuskegee University</div>
+          <div class="edu-dates">August 2023 — May 2027 (Expected)</div>
+          <div class="edu-details">
+            <div class="edu-detail">
+              <span class="edu-detail-icon">📊</span>
+              <span>GPA: 3.8 / 4.0</span>
+            </div>
+            <div class="edu-detail">
+              <span class="edu-detail-icon">🏆</span>
+              <span>Presidential Scholar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-header">
+      <p class="section-label">03 — Experience</p>
+      <h2>Where I've worked</h2>
+      <p class="section-subtitle">Professional experience and positions</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>IT Support / Geek Squad Intern</h3>
+        <div class="timeline-meta">Best Buy</div>
+        <div class="timeline-dates">May 2025 — August 2025</div>
+        <ul>
+          <li>Diagnosed and resolved hardware, software, and network issues for customers</li>
+          <li>Collaborated with team members to streamline repair workflows and reduce service turnaround time</li>
+          <li>Assisted customers with installations, system setups, and troubleshooting</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <h3>IT / CyberSecurity Intern</h3>
+        <div class="timeline-meta">Year Up</div>
+        <div class="timeline-dates">May 2024 — August 2024</div>
+        <ul>
+          <li>Supported troubleshooting and system maintenance tasks</li>
+          <li>Collaborated with peers on technical projects</li>
+          <li>Applied foundational concepts to analyze system vulnerabilities</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <section id="projects">
     <div class="section-header">
-      <div class="section-label">Projects</div>
-      <h2>My Work</h2>
+      <p class="section-label">05 — Projects</p>
+      <h2>What I've built</h2>
+      <p class="section-subtitle">
+        See <a href="https://github.com/Tashamii" target="_blank">GitHub</a> for source code and more
+      </p>
     </div>
-
     <div class="projects-grid">
-
       <div class="project-card">
-        <h3>Dungeons & Dragons Battle Game</h3>
-        <p>
-          A turn-based fantasy battle game built in C++ using object-oriented programming,
-          featuring multiple charcter classes and dice-based combat mechanics.
-        </p>
+        <div class="project-header">
+          <div>
+            <h3><a href="https://github.com/Tashamii/Dungeons-Dragons-Fantasy-Battle-Game" target="_blank">Project One — Dungeons & Dragons Fantasy Battle Game</a></h3>
+            <div class="project-type">Game Development / OOP</div>
+          </div>
+          <a href="https://github.com/Tashamii/Dungeons-Dragons-Fantasy-Battle-Game" target="_blank" class="project-link">↗</a>
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">C++</span>
+          <span class="tech-tag">OOP</span>
+          <span class="tech-tag">Game Logic</span>
+        </div>
+        <ul>
+          <li>Developed a turn-based fantasy battle game in C++ using object-oriented programming with multiple character classes</li>
+          <li>Implemented core game mechanics including dice based attack calculations, user input handling, and dynamic health tracking</li>
+          <li>Designed modular class structures and turn based combat logic to simulate strategic player interactions</li>
+        </ul>
       </div>
-
+      
       <div class="project-card">
-        <h3>Virtual Pet Simulator</h3>
-        <p>
-          A Tamagotchi-style simulator built in C++ using inheritace, dynamtic memory,
-          and inheritance user commands to manage pet behavior and status.
-        </p>
+        <div class="project-header">
+          <div>
+            <h3><a href="https://github.com/Tashamii/Virtual-Pet-Simulator" target="_blank">Project Two — Virtual Pet Simulator </a></h3>
+            <div class="project-type">Software Development / Simulation</div>
+          </div>
+          <a href="https://github.com/Tashamii/Virtual-Pet-Simulator" target="_blank" class="project-link">↗</a>
+        </div>
+        <div class="tech-tags">
+          <span class="tech-tag">C++</span>
+          <span class="tech-tag">OOP</span>
+          <span class="tech-tag">File I/O</span>
+        </div>
+        <ul>
+          <li>Built a Tamagotchi style virtual pet simulator in C++ using inheritance, polymorphism, and dynamic memory allocatio</li>
+          <li>Implemented interactive features such as feeding, playing, mood tracking, and ASCII based pet visualization</li>
+          <li>Utilized file input and command driven gameplay to manage multiple pets and simulate real time behavior</li>
+        </ul>
       </div>
-
     </div>
   </section>
 
-  <!-- Skills -->
+  <section id="art">
+    <div class="section-header">
+      <p class="section-label">06 — Creative</p>
+      <h2>Beyond the code</h2>
+    </div>
+    <p class="art-intro">
+      Outside of CS, I enjoy playing video games, watching anime, and fashion. Here's a glimpse into my creative side.
+    </p>
+    <div class="art-grid">
+      <div class="art-item">
+	<img src="assets/images/gaming1.jpg" alt="Playing Apex Legends">
+        <div class="art-overlay">Apex Legends</div>
+      </div>
+      <div class="art-item">
+	<img src="assets/images/anime1.jpg" alt="Solo Leveling">
+	<div class="art-overlay">Solo Leveling</div>
+      </div>
+      <div class="art-item">
+	<img src="assets/images/fashion1.JPG" alt="Streetwear Outfit">
+        <div class="art-overlay">Parisian Street Style</div>
+      </div>
+      <div class="art-item">
+	<img src="assets/images/gaming2.jpg" alt="Avatar: Frontiers of Pandora">
+	<div class="art-overlay">Avatar: Frontiers of Pandora</div>
+      </div>
+      <div class="art-item">
+	<img src="assets/images/anime2.jpg" alt="Fullmetal Alchemist Brotherhood">
+	<div class="art-overlay">Fullmetal Alchemist Brotherhood</div>
+      </div>
+      <div class="art-item">
+	<img src="assets/images/fashion2.JPG" alt="Streetwear Outfit">
+	<div class="art-overlay">Vintage streetwear with thrift-core + soft prep mix style</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="volunteering">
+    <div class="section-header">
+      <p class="section-label">07 — Volunteering</p>
+      <h2>Giving back</h2>
+      <p class="section-subtitle">Leadership and community involvement</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Member</h3>
+        <div class="timeline-meta">Boyz ll Gentlemen Mentor Organization</div>
+        <div class="timeline-dates">October 2024 — Present</div>
+        <ul>
+          <li>Mentored undergraduate students in academic success, leadership development, and personal growth</li>
+          <li>Coordinated and supported workshops, seminars, and outreach initiatives promoting responsibility and community engagement</li>
+	  <li>Partnered with faculty and community organizations to execute service projects and leadership driven programs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <section id="skills">
     <div class="section-header">
-      <div class="section-label">Skills</div>
-      <h2>Technical Skills</h2>
+      <p class="section-label">08 — Skills</p>
+      <h2>What I work with</h2>
     </div>
-    
-    <p>
-      C++, Java, Python, CSS, C#, SQL, Typescript, & Javascript
-    </p>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">{ }</div>
+        <h4>Software Development</h4>
+        <p>Proficient in C++ with experience in object-oriented programming, data structures, and dynamic memory management.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⚙</div>
+        <h4>Tools & Technologies</h4>
+        <p>Visual Studio Code, Geany IDE, Git, GitHub, Makefiles, Linux.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">◎</div>
+        <h4>Core Concepts</h4>
+        <p>Object-Oriented Programming (OOP), Inheritance, Polymorphism, File I/O, Pointers, Recursion, Algorithm Design.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⬡</div>
+        <h4>Teamwork</h4>
+        <p>Collaborated on group programming projects, contributed to shared codebases, and communicated effectively to solve technical challenges.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">★</div>
+        <h4>Leadership</h4>
+        <p>Mentored undergraduate students through Boyz2Gentlemen, supporting academic growth, leadership development, and community engagement.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">◇</div>
+        <h4>Web Development</h4>
+        <p>Basic experience with HTML, CSS, and JavaScript for building responsive personal portfolio websites.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Contact -->
   <section id="contact">
     <div class="section-header">
-      <div class="section-label">Conact</div>
-      <h2>Get In Touch</h2>
+      <p class="section-label">09 — Contact</p>
+      <h2>Let's connect</h2>
     </div>
-
-    <p>
-      If you'd like to connect, collaborate, pr learn more about my work, feel free to reach out.
-    </p>
-
-    <a href="mailto:tigger.parker.tp@gmail.com" class="btn-primary">
-      Send Email
-    </a>
+    <div class="contact-content">
+      <div class="contact-text">
+        <p>
+          I'm always open to new opportunities, collaborations, or just a good conversation 
+          about tech. Feel free to reach out—I'd love to hear from you.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:tigger.parker.tp@gmail.com" class="contact-link">
+            <span class="contact-link-icon">✉</span>
+            tigger.parker.tp@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/tashamii-parker-194b062b6" target="_blank" class="contact-link">
+            <span class="contact-link-icon">in</span>
+            linkedin.com/in/tashamii-parker
+          </a>
+          <a href="https://github.com/Tashamii" target="_blank" class="contact-link">
+            <span class="contact-link-icon">⌘</span>
+            github.com/Tashamii
+          </a>
+        </div>
+      </div>
+      <div class="contact-cta">
+        <div class="contact-cta-icon">👋</div>
+        <h3>Open to opportunities</h3>
+        <p>Currently looking for internships and collaborations for Summer 2026 and beyond.</p>
+        <a href="assets/resume.pdf" download target="_blank" class="btn-primary">
+          <span>↓</span> Download Resume
+        </a>
+      </div>
+    </div>
   </section>
 
-</main>
+  <footer>
+    <p>Designed & built by <span>Tashamii Parker</span> · © 2026</p>
+  </footer>
 
-<!-- JS -->
+</main>
 <script src="script.js"></script>
-  
 </body>
 </html>
